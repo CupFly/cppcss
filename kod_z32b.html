@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<font face="times new roman">
+<textarea cols=82 rows=21>#include <cstdlib>
+#include <iostream>
+#include <windows.h> 
+using namespace std;
+void gotoxy(int x, int y) 
+{ 
+ COORD coord; 
+ coord.X = x; 
+ coord.Y = y; 
+ SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord); 
+}
+int main(int argc, char *argv[])
+{
+ for (int i=0;i<=20;i++)
+ {
+ gotoxy(20-i,i);
+ cout<<"*";
+ } 
+ system("PAUSE");
+ return EXIT_SUCCESS;
+}</textarea>
+</font>
+</body>
+</html>
