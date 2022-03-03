@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    </head>
+    <body>
+    <font face="times new roman">
+    <textarea cols=60 rows=20>#include <cstdlib>
+    #include <iostream>
+    
+    using namespace std;
+    
+    int main(int argc, char *argv[])
+    {
+    system("chcp 1250");
+    int n_wol;
+    cout<<"podaj liczbę n=";
+    cin>>n_wol;
+    int silnia_wol=1;
+    for (int i=n_wol;i>1;i--)
+    {
+    silnia_wol*=i;
+    }
+    cout<<n_wol<<"! = "<<silnia_wol<<endl;
+    system("PAUSE");
+    return EXIT_SUCCESS;
+    }</textarea>
+    </font>
+    </body>
+    </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    </head>
+    <body>
+    <font face="times new roman">
+    <textarea cols=60 rows=28>#include <cstdlib>
+    #include <iostream>
+    
+    using namespace std;
+    
+    int main(int argc, char *argv[])
+    {
+    system("chcp 1250");
+    int gora_wol;
+    cout<<"podaj górną granicę obliczania sumy=";
+    cin>>gora_wol;
+    int dol_wol;
+    cout<<"podaj dolną granicę obliczania sumy=";
+    cin>>dol_wol;
+    int iloczyn_wol=1;
+    for (int i=dol_wol;i<=gora_wol;i++)
+    {
+    iloczyn_wol=iloczyn_wol*i;
+    }
+    cout<<"Iloczyn="<<iloczyn_wol<<endl;
+    system("PAUSE");
+    return EXIT_SUCCESS;
+    }</textarea>
+    </font>
+    </body>
+    </html>

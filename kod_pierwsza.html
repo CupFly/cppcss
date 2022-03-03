@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    </head>
+    <body>
+    <font face="times new roman">
+    <textarea cols=82 rows=53>#include <cstdlib>
+    #include <iostream>
+    #include <math.h>
+    using namespace std;
+    int main(int argc, char *argv[])
+    {
+     cout<<"podaj pierwsza liczbe naturalna, ktora sprawdze czy jest pierwsza=";
+     int pierwsza;
+     int pierwsza2;
+     int k=0;
+     cin>>pierwsza;
+     for(int i=2;i<=sqrt(pierwsza);++i)
+     {
+     if ((pierwsza) % i==0) 
+     {
+     k=1;
+     cout<<"liczba "<<pierwsza<<" to nie jest liczba pierwsza jest podzielna przez "
+     <<i<<"\n";
+     }
+     }
+     if ( k==0)
+     {
+     cout<<"liczba "<<pierwsza<<" to jest liczba pierwsza"<<"\n";
+     }
+      cout<<"podaj druga liczbe naturalna, ktora sprawdze czy jest pierwsza=";
+    cin>>pierwsza2;
+     for(int i=2;i<=sqrt(pierwsza2);++i)
+     {
+     if ((pierwsza2) % i==0) 
+     {
+     k=1;
+     cout<<"liczba "<<pierwsza2<<" to nie jest liczba pierwsza jest podzielna przez "
+     <<i<<"\n";
+     }
+     }
+     if ( k==0)
+     {
+     cout<<"liczba "<<pierwsza2<<" to jest liczba pierwsza"<<"\n";
+     }
+     {
+     cout<<"Suma wynosi "<<pierwsza+pierwsza2<<"";      
+         cout<<endl;        
+     }
+    for(int i=2;i<=sqrt(pierwsza+pierwsza2);++i)
+     {
+     if ((pierwsza)+(pierwsza2) % i==0) 
+     {
+     k=1;
+     cout<<"Suma "<<pierwsza+pierwsza2<<" jest nie parzysta ";
+     }
+     }
+     if ( k==0)
+     {
+     cout<<"Suma "<<pierwsza+pierwsza2<<" jest parzysta ";
+         cout<<endl;
+     }
+     system("PAUSE");
+     return EXIT_SUCCESS;
+    }</textarea>
+    </font>
+    </body>
+    </html>

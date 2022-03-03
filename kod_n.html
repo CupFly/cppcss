@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    </head>
+    <body>
+    <font face="times new roman">
+    <textarea cols=60 rows=32>#include <cstdlib>
+    #include <iostream>
+    
+    using namespace std;
+    
+    int main(int argc, char *argv[])
+    {
+    // Napisz program, który po wczytaniu liczby sprawdzi czy jest ona doskonała, metodą sumowania podzielników (w pętli) i sprawdzania czy suma jest równa wczytanej liczbie.
+    system("chcp 1250");
+        int n_wol;
+            
+            cout<<"Podaj liczbę: ";
+            cin>>n_wol;
+            
+            cout<<"Czynniki pierwsze liczby "<<n_wol<<": ";
+            
+            int k_wol=2;
+    
+            while(n_wol>1)
+            {
+                    if(n_wol%k_wol==0)
+                    {
+                            cout<<k_wol<<" ";
+                            n_wol/=k_wol;
+                    }
+                    ++k_wol;
+            }
+    system("PAUSE");
+    return EXIT_SUCCESS;
+    }</textarea>
+    </font>
+    </body>
+    </html>
